@@ -295,6 +295,57 @@ export function ContentManagerModal({
                   </div>
                 </div>
               </div>
+
+              {/* Quick Select Presets Grid */}
+              <div className="pt-4 border-t border-white/10">
+                <span className="text-xs font-bold uppercase tracking-wider text-white/60 block mb-3 font-display">
+                  Seleccionar foto oficial disponible:
+                </span>
+                <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                  {[
+                    { src: '/assets/corredor.png', label: 'Corredor Binacional' },
+                    { src: '/assets/banner_cotesma.png', label: 'Banner Oficial' },
+                    { src: '/assets/laboratorio_pucon.jpg', label: 'Lab Pucón' },
+                    { src: '/assets/crtic-lab-28.webp', label: 'Lab CRTIC 28' },
+                    { src: '/assets/isi_argentina.jpg', label: 'Registro 01' },
+                    { src: '/assets/gallardo_argentina.jpg', label: 'Registro 02' },
+                    { src: '/assets/leal_argentina.jpg', label: 'Registro 03' },
+                    { src: '/assets/slide5_foto_4.jpg', label: 'Registro 04' },
+                    { src: '/assets/slide5_foto_5.jpg', label: 'Registro 05' },
+                    { src: '/assets/slide5_foto_6.jpg', label: 'Registro 06' },
+                    { src: '/assets/vaca_muerta_logistics_1790176317776.jpg', label: 'Logística VM' },
+                    { src: '/assets/creative_tech_district_1790176330706.jpg', label: 'Distrito Tech' },
+                  ].map((preset, pIdx) => (
+                    <button
+                      key={pIdx}
+                      type="button"
+                      onClick={() => {
+                        const updated: SlideData = {
+                          ...activeSlide,
+                          heroImage: preset.src,
+                          imageCaption: preset.label,
+                        };
+                        onUpdateSlide(updated);
+                      }}
+                      className={`relative aspect-video rounded border overflow-hidden group text-left transition-all ${
+                        activeSlide.heroImage === preset.src
+                          ? 'border-[#48e5d8] ring-2 ring-[#48e5d8]'
+                          : 'border-white/10 hover:border-white/40'
+                      }`}
+                    >
+                      <img
+                        src={preset.src}
+                        alt={preset.label}
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      />
+                      <div className="absolute inset-x-0 bottom-0 bg-black/90 p-1 text-[9px] text-white/90 truncate font-mono">
+                        {preset.label}
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
 

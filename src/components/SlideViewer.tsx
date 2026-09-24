@@ -64,6 +64,11 @@ export function SlideViewer({
 
   const slide5Photos = [
     {
+      src: '/assets/corredor.png',
+      caption: 'Mapa y cartografía operativa del Corredor Binacional Tecnológico y Creativo.',
+      tag: 'MAPA OFICIAL',
+    },
+    {
       src: '/assets/isi_argentina.jpg',
       caption: 'Delegación y articulación de equipos técnicos en San Martín de los Andes.',
       tag: 'REGISTRO 01',
@@ -77,6 +82,11 @@ export function SlideViewer({
       src: '/assets/leal_argentina.jpg',
       caption: 'Presentación y acuerdos de colaboración estratégica bilateral.',
       tag: 'REGISTRO 03',
+    },
+    {
+      src: '/assets/crtic-lab-28.webp',
+      caption: 'Laboratorio CRTIC Sur: Infraestructura y experimentación tecnocreativa.',
+      tag: 'LABORATORIO',
     },
     {
       src: '/assets/slide5_foto_4.jpg',

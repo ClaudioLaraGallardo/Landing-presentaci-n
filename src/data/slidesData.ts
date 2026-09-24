@@ -9,8 +9,8 @@ export const INITIAL_SLIDES: SlideData[] = [
     subtitle:
       'Articulación entre CRTIC y COTESMA para posicionar a la macrozona sur y la Patagonia en el mapa global de la economía del conocimiento, conectada a los flujos del Pacífico.',
     primaryTag: '¿Qué es CRTIC?',
-    heroImage: '/src/assets/images/hero_corredor_binacional_1790176304826.jpg',
-    imageCaption: 'Paso Andino Binacional conectando la Región de La Araucanía con Neuquén y la Patagonia Norte.',
+    heroImage: '/assets/corredor.png',
+    imageCaption: 'Cartografía Oficial: Corredor Binacional Tecnológico y Creativo (La Araucanía – San Martín de los Andes).',
     corePillars: [
       {
         title: '¿Qué es CRTIC?',
@@ -81,7 +81,7 @@ export const INITIAL_SLIDES: SlideData[] = [
     subtitle:
       'La Araucanía se posiciona como el nodo multimodal de menor distancia y mayor eficiencia para los requerimientos de Vaca Muerta y su salida a mercados asiáticos.',
     primaryTag: 'Logística & Comercio',
-    heroImage: '/src/assets/images/vaca_muerta_logistics_1790176317776.jpg',
+    heroImage: '/assets/vaca_muerta_logistics_1790176317776.jpg',
     imageCaption: 'Articulación logística multimodal: De la cuenca neuquina a terminales marítimos del Pacífico chileno.',
     corePillars: [
       {
@@ -130,7 +130,7 @@ export const INITIAL_SLIDES: SlideData[] = [
     subtitle:
       'Más allá del transporte físico de hidrocarburos: La Araucanía y San Martín de los Andes construyen un ecosistema de servicios intensivos en conocimiento y soluciones avanzadas.',
     primaryTag: 'Economía del Conocimiento',
-    heroImage: '/src/assets/images/creative_tech_district_1790176330706.jpg',
+    heroImage: '/assets/creative_tech_district_1790176330706.jpg',
     imageCaption: 'Distrito de innovación y tecnologías de información aplicadas a la sostenibilidad y energía.',
     corePillars: [
       {
@@ -259,9 +259,11 @@ export const INITIAL_SLIDES: SlideData[] = [
       'Cierre de la presentación: Concluir con un llamado claro a la acción para firmar la carta de intención y revisar el registro fotográfico de terreno como evidencia del trabajo conjunto.',
     graphicType: 'action-matrix',
     customImages: [
+      '/assets/corredor.png',
       '/assets/isi_argentina.jpg',
       '/assets/gallardo_argentina.jpg',
       '/assets/leal_argentina.jpg',
+      '/assets/crtic-lab-28.webp',
       '/assets/slide5_foto_4.jpg',
       '/assets/slide5_foto_5.jpg',
       '/assets/slide5_foto_6.jpg',
