@@ -1,0 +1,6 @@
+{
+  "name": "Corredor Binacional Tecnológico - Araucanía Comex",
+  "description": "Landing page y presentación de 5 slides para la Mesa Araucanía Comex: Corredor Binacional Tecnológico y Creativo (CRTIC + COTESMA, Vaca Muerta, Logística y Talento).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
